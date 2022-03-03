@@ -33,5 +33,10 @@ namespace PracticaMVCCore.UIWeb.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult MiSitio()
+        {
+            string html = "<h1> Hola mundo </h1>";
+            return Content(html);
+        }
     }
 }
