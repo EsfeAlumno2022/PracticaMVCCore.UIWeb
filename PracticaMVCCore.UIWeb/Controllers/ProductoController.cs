@@ -83,5 +83,10 @@ namespace PracticaMVCCore.UIWeb.Controllers
                 return View();
             }
         }
+        [HttpPost]
+        public ActionResult ObtenerDatos(string pEmail,string pPassword)
+        {
+           return RedirectToAction("Index", "Home");
+        }
     }
 }
